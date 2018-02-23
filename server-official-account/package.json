@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"supervisor app"
+    "start": "supervisor app"
   },
   "keywords": [
     "wechat",
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.2",
+    "mysql": "^2.15.0",
     "wechat": "^2.1.0"
   }
 }
