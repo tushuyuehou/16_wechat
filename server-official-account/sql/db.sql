@@ -11,6 +11,7 @@ CREATE TABLE wechat.chat(
 INSERT INTO wechat.chat VALUE(NULL, '你好', '您好！');
 INSERT INTO wechat.chat VALUE(NULL, '你是谁？', '我是聊天机器人');
 INSERT INTO wechat.chat VALUE(NULL, '再见', '再见！');
+INSERT INTO wechat.chat VALUE(NULL, 'hello', '嗨！');
 
 SELECT *
 FROM wechat.chat;
