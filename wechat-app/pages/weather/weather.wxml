@@ -1,0 +1,7 @@
+<!--pages/weather/weather.wxml-->
+<text>图梳气象台—天气报告</text>
+<view>
+  <text>{{locationCity}} {{weather}} {{tmp}} {{wind_dir}}{{wind_spd}}</text>
+  <input placeholder='请输入城市：例如（广州）' bindinput='getCity'></input>
+  <button bindtap='getWeather' type='primary'>查询天气</button>
+</view>

@@ -1,0 +1,10 @@
+/* pages/weather/weather.wxss */
+text,input{
+  display:block;
+  text-align:center;
+  margin:1em 0;
+}
+input{
+  background:#ddd;
+  padding:10px 5px;
+}
