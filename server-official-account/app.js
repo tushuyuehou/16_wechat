@@ -19,11 +19,11 @@ let pool = MYSQL.createPool({
 
 app.use('/',WECHAT(config,(req,res)=>{
     let message = req.weixin;
-    let content = message.Content;
+    let question = message.Content;
     console.log(message.Content);
 
-    let sql = `SELECT * FROM wechat.chat WHERE question LIKE ?`;
-    pool.query(sql,['%'+content+'%'],(err,results)=>{
+    let sql = "SELECT * FROM wechat.chat WHERE ? LIKE CONCAT('%',question,'%')";
+    pool.query(sql,[question],(err,results)=>{
         if(err) throw err;
         if(results.length === 1){
             res.reply(results[0].answer);
