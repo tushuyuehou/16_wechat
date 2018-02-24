@@ -1,1 +1,6 @@
-<view>Test Page...</view>
+<!--pages/test/test.wxml-->
+<text style="display:block">点赞{{num}}</text>
+<text>{{message}}</text>
+<button type='primary' bindtap='testTap' style="margin:2em 0">点赞</button>
+
+<button bindtap='changeMessage'>改变文字</button>

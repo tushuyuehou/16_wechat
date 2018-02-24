@@ -7,6 +7,9 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+
+  <navigator url='../test/test' open-type='redirect'>go to test page</navigator>
+
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
