@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/weather/weather",
+    "pages/ip/ip",
     "pages/index/index",
+    "pages/weather/weather",
+    
     "pages/logs/logs",
     "pages/test/test" 
   ],

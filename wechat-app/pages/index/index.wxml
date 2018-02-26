@@ -8,6 +8,7 @@
     </block>
   </view>
 
+  <navigator url='../weather/weather' open-type='redirect'>前往图梳气象台</navigator>
   <navigator url='../test/test' open-type='redirect'>go to test page</navigator>
 
   <view class="usermotto">

@@ -21,18 +21,20 @@ Page({
     wx.request({
       url: url,
       success:(res)=>{
-        let weather = res.data.HeWeather6[0].now.cond_txt;
-        let locationCity = res.data.HeWeather6[0].basic.parent_city;
-        let tmp = res.data.HeWeather6[0].now.tmp;
-        let wind_dir = res.data.HeWeather6[0].now.wind_dir;
-        let wind_spd = res.data.HeWeather6[0].now.wind_spd;
-        this.setData({
-          weather: weather,
-          locationCity: locationCity,
-          tmp:tmp+'°',
-          wind_dir: wind_dir,
-          wind_spd: wind_spd+'级'
-        })  
+        if (res.data.HeWeather6[0].status !='unknown city'){
+          let weather = res.data.HeWeather6[0].now.cond_txt;
+          let locationCity = res.data.HeWeather6[0].basic.parent_city;
+          let tmp = res.data.HeWeather6[0].now.tmp;
+          let wind_dir = res.data.HeWeather6[0].now.wind_dir;
+          let wind_spd = res.data.HeWeather6[0].now.wind_spd;
+          this.setData({
+            weather: weather,
+            locationCity: locationCity,
+            tmp: tmp + '°',
+            wind_dir: wind_dir,
+            wind_spd: wind_spd + '级'
+          })
+        }    
       }
     });    
   },
