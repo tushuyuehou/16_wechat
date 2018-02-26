@@ -6,7 +6,7 @@ Page({
    */
   data: {
     weather:'天气信息',
-    city:'',
+    city:null,
     locationCity:'',
     tmp:'',
     wind_dir:'',
