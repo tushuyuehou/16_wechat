@@ -34,6 +34,14 @@ Page({
             wind_dir: wind_dir,
             wind_spd: wind_spd + '级'
           })
+        }else{
+          this.setData({
+            weather: '没有这个城市的天气',
+            locationCity: '',
+            tmp: '',
+            wind_dir: '',
+            wind_spd: ''
+          })
         }    
       }
     });    
